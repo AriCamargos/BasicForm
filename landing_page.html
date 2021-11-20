@@ -4,76 +4,112 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formulário | Amortex</title>
+   <link rel="icon" type="image/png" sizes="16x16" href="/BasicForm/image/favicon.ico">
    <link rel="stylesheet" href="estilo.css" />
-</head>
-<body>
-   <main>
-      <h1> Formulário de Pesquisa Amortex </h1>
-
-      <div class="subtitle">
-         <h4>Respondendo este questionário, você estará contribuindo para melhoria do nosso serviço</h4>
-      </div>
-
-      <div class="social-media">
-         <a href="#">
-            <img src='/image/facebook.png' alt='Facebook'> 
-         </a>   
-         <a href="#">
-            <img src='/image/instagram_transp.png' alt='Instagram'> 
-         </a>   
-      </div>
+   <style>
 
       
+   </style>
+</head>
+<body>
+   <div class="w">
       <form action="">
-         <label for='name'>
-            <span>Nome</span>
-            <input type="text" name="name" id="name">
-         </label>
+            <legend><b> Formulário de Pesquisa Amortex </b></legend>
+            <p>Respondendo este questionário você estará contribuindo<br> para melhoria do nosso serviço</p>
+            <br>
 
-         <label for="whatsapp">
-            <span>Whatsapp</span>
-            <input type="number" name="number" id="number">
-         </label>
+            <div class = "inputBox">
+               <input type="text" name="name" id="name" class="inputUser" required>
+               <label for="name" class="labelInput">Nome</label>
+            </div>
+            <br>
 
-         <div for="good">
-            <span>Você ficou satisfeito com a solução do problema?</span>
-            <input type="checkbox" name="excelent" id="excelent">
-            <label for="excelent">Excelente</label>
-            <input type="checkbox" name="good" id="good">
-            <label for="good">Muito bom</label>
-            <input type="checkbox" name="bad" id="bad">
-            <label for="bad">Não gostei</label>
-         </div>
-         
-         <div for="service">
-            <span>Como você avalia nosso atendimento?</span>
-            <input type="checkbox" name="excelent" id="excelent">
-            <label for="excelent">Excelente</label>
-            <input type="checkbox" name="good" id="good">
-            <label for="good">Muito bom</label>
-            <input type="checkbox" name="bad" id="bad">
-            <label for="bad">Não gostei</label>
-         </div>
-         
-         <div>Como você avalia limpeza do ambiente? </div>
-         <input type="checkbox" name="excelent" id="excelent">
-            <label for="excelent">Excelente</label>
-            <input type="checkbox" name="good" id="good">
-            <label for="good">Muito bom</label>
-            <input type="checkbox" name="bad" id="bad">
-            <label for="bad">Não gostei</label>
+            <div class = "inputBox">
+               <input type="tel" name="number" placeholder="DDD + número" id="number" class="inputUser" required>
+               <label for="whatsapp" class="laberInput">Whatsapp</label>
+            </div>
+            <br>
 
-         <label for="indication">
-            <span>Você indicaria a Amortex para algum parente ou amigo?</span>
-            <input type="checkbox" name="yes" id="yes">
-               <label for="yes">Sim</label>
-            <input type="checkbox" name="no" id="no">
-               <label for="no">Não</label>
-            <input type="text">
+            <p>Por onde você nos achou?</p>
+            <input type="checkbox" name="find" class="inputFind" >
+            <label for="facebook">Facebook</label>
+
+            <input type="checkbox" name="find" class="inputFind" >
+            <label for="instagram">Instagram</label>
+
+            <input type="checkbox" name="find" class="inputFind" >
+            <label for="indication">Indicação</label>
+
+            <input type="checkbox" name="find" class="inputFind" >
+            <label for="pamphlet">Panfleto</label>
+            <br>
+
+            <br>
+            <div class="input">
+               <p>Você ficou satisfeito com a solução do problema?</p>
+
+               <input type="radio" name="resposta1" id ="excelent" class="inputFind" required>
+               <label for="question"> Excelente</label>
+               <input type="radio" name="resposta1" id ="good" class="inputFind" required>
+               <label for="question"> Bom </label>
+               <input type="radio" name="resposta1" id ="bad"class="inputFind" required>
+               <label for="question"> Não gostei</label>
+            <br>
+            
+            <div for="service">
+               <p>Como você avalia nosso atendimento?</p>
+               <input type="radio" name="resposta2" id ="excelent" class="inputFind" required>
+               <label for="question"> Excelente</label>
+               <input type="radio" name="resposta2" id ="good" class="inputFind" required>
+               <label for="question"> Bom </label>
+               <input type="radio" name="resposta2" id ="bad"class="inputFind" required>
+               <label for="question"> Não gostei</label>
+            <br>
+            
+            <div for="service">
+               <p>Como você avalia nosso ambiente/conforto?</p>
+               <input type="radio" name="resposta3" id ="excelent" class="inputFind" required>
+               <label for="question"> Excelente</label>
+               <input type="radio" name="resposta3" id ="good" class="inputFind" required>
+               <label for="question"> Bom </label>
+               <input type="radio" name="resposta3" id ="bad"class="inputFind" required>
+               <label for="question"> Não gostei</label>
+            <br>
+
+            <div for ="service">
+               <p>Com quem teve o primeiro contato de atendimento?</p>
+               <select id="atendente">
+                  <option selected disable value ="">Selecione</option>
+                  <option> José </option>
+                  <option> Alex (Miúdo) </option>
+                  <option> Julio </option>
+               </select>
+            </div>
+
+            
+            <div for="indication">
+               <p>Você indicaria a Amortex para algum parente ou amigo?</p>
+               <input type="radio" name="resposta" id="yes" value = "yes" class="inputUser" required >
+            <label for="yes">Sim</label>
+            <input type="radio" name="resposta" id="no" value= "no"class="inputUser" required>
+            <label for="no">Não</label><br>
             <label for="why">Porque?</label>
-         </label>
+            <input type="text" name="resposta" id="why" class="inputUser" required >
+            </div>
+            <br>
+
+            <p>Como podemos melhorar nosso produto ou serviço?</p>
+            <textarea name="meu_texto" rows="5" cols= "100" placeholder="Digite o texto aqui"></textarea>
+            <br>   
+            <button>
+               <input type="submit" name="submit" id="submit" class="button" required >
+            </button>
+
+         </div>
       </form>
+   </fieldset>
    </main>
-   
+</div>
 </body>
 </html>

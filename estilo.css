@@ -1,48 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 *{
    margin: 0;
    padding: 0;
-   border: 0;
-   box-sizing: border-box;
-   font-family:'Poppis',sans-serif ;
 }
-
-#subtitle{
-   margin-left: 10%;
-}
-
 body{
-   position: relative;
-   text-align: center;
-   background: black;
-   color: white;
-   font-weight: 500; /*negrito*/
-   font-size: 1em;
-  
-   justify-content: center;
+   font-family: 'Poppis',sans-serif;
+   background-image: linear-gradient(to right, orange, gray);
+   height: 400hv;
+   top: 50px;
+}
+
+.inputUser.inputUser{
+   padding: 0.2em; ;
+   border-radius: 4px;
+   display: inline;
+   display: inline-block;
 
 }
 
-/*main{
-   font-size: 1em;
-   display: inline-flex;
-   margin-left: 36%;
-   margin-top: 2%;
-   justify-content: center;
-}*/
+fieldset{
+   border: 3px solid dodgerblue;
+}
 
-main h1{
-   color: DarkOrange;
-   font-size: 3rem; /*tamanho da font*/
-   margin-bottom: 3rem;
+textarea, p{
+   font-size: 0.8rem;
+   letter-spacing: 1px;
+}
+
+textarea{
+   padding: 10px;
+   max-width: 100%;
+   line-height: 1.5;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   box-shadow: 1px 1px 1px #999;
 }
 
 
 
-main .social-media{
-   align-content: center;
-}
-
-main .social-media img{
-   width: 36px;
-}
